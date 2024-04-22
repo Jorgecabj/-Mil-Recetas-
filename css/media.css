@@ -4,8 +4,16 @@
         width: 90%;
     }
 
+    .floor_good_hd h3::before {
+        bottom: -3px; /* Ajuste de la posición vertical */
+    }
+
     .floor_good_hd span::after {
         bottom: -3px; /* Ajuste de la posición vertical */
+    }
+
+    .floor_good_hd h3 {
+        font-size: 20px; /* Reducir el tamaño del texto para pantallas más pequeñas */
     }
 
     .logo {
