@@ -15,6 +15,10 @@
         width: 250px;
     }
 
+    .user {
+        margin-top: 20px; 
+    }
+
     .subnav a {
         padding: 10px 15px;
         margin-left: 15px;
