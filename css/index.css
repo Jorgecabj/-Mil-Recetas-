@@ -1,7 +1,5 @@
-:root{
-    --bg-input-color: #a3a3a3;
-
-}
+/* CSS que aplica al Body (Header, Nav y Footer) */
+/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
 
 body {
     position: relative;
@@ -27,9 +25,9 @@ body::before {
 }
 
 .container {
-    width: 95%; /* Ocupa el 95% del ancho del viewport, dando un poco de margen a los lados */
-    max-width: 1200px; /* No crece más de 1200px para evitar que en pantallas grandes el contenido se estire demasiado */
-    margin: auto; /* Centra el contenedor horizontalmente en la página */
+    width: 95%; 
+    max-width: 1200px; 
+    margin: auto; 
 }
 
 
@@ -37,10 +35,11 @@ body::before {
 
 .hea-nav{
     background-image: url(../img/fondodis.png);
-    background-size: center;
+    background-size: contain;
     background-position: center;
 }
 
+/* Header */
 
 .header{
     display: flex;
@@ -66,7 +65,6 @@ nav{
 }
 
 .nav-top{
-    height: 75px;
     justify-content: space-between; 
     align-items: center;
     height: 75px;
@@ -103,7 +101,6 @@ nav{
 
 .search-wrap{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 70px;
 }
@@ -131,9 +128,6 @@ nav{
     display: block;
     width: 25px;
     height: 25px;
-}
-
-.search::before{
     top:8px;
     left: 6px;
     background: url(../img/search.png) no-repeat;

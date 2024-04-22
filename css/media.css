@@ -1,23 +1,40 @@
-/* Media queries para dispositivos pequeños (móviles) */
-@media (max-width: 768px) {
-    .logo {
-        width: 30%; /* Más grande en dispositivos pequeños */
+/* CSS que aplica al Section (Main (lista de recetas)) */
+/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
     }
 
-    .nav-top {
-        flex-direction: column;
-        align-items: center;
+    .logo {
+        width: 30%;
     }
 
     .search {
-        width: 90%; /* Aprovecha más espacio para la búsqueda */
-    }
-
-    .subnav .w li {
-        margin-right: 10px; /* Menos margen entre elementos */
+        width: 250px;
     }
 
     .subnav a {
-        margin-left: 10px; /* Menos margen */
+        padding: 10px 15px;
+        margin-left: 15px;
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Estilos para computadores y pantallas más grandes */
+@media only screen and (min-width: 1025px) {
+    .container {
+        width: 100%;
+    }
+
+    .search {
+        width: 450px;
     }
 }
