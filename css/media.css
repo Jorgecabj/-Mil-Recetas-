@@ -1,195 +1,23 @@
-/* Aplicar resolucion para la pagina */
-
-/* Estilos para dispositivos con una anchura de pantalla de hasta 480px (por ejemplo, dispositivos móviles) */
-@media only screen and (max-width: 480px) {
-    /* Estilos para el header */
-    .hea-nav {
-        padding: 10px;
-    }
-
-    .texto1 {
-        font-size: 16px;
-    }
-
-    .search-wrap {
-        display: block;
-        text-align: center;
-    }
-
+/* Media queries para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
     .logo {
-        margin-bottom: 10px;
+        width: 30%; /* Más grande en dispositivos pequeños */
     }
 
-    .user {
-        margin-top: 10px;
+    .nav-top {
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Estilos para los enlaces en el nav */
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
+    .search {
+        width: 90%; /* Aprovecha más espacio para la búsqueda */
     }
 
-    /* Estilos para las secciones principales */
-    .main {
-        padding: 10px;
+    .subnav .w li {
+        margin-right: 10px; /* Menos margen entre elementos */
     }
 
-    .floor_good_hd h3 {
-        font-size: 20px;
-    }
-
-    .goods li {
-        width: 100%;
-    }
-
-    .desc {
-        padding: 5px;
-    }
-
-    /* Estilos para el footer */
-    footer {
-        padding: 10px;
-    }
-
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-section ul {
-        padding-left: 0;
-    }
-}
-
-/* Estilos para dispositivos con una anchura de pantalla entre 481px y 768px (por ejemplo, dispositivos móviles y tabletas) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Estilos para el header */
-    .hea-nav {
-        padding: 15px;
-    }
-
-    .texto1 {
-        font-size: 18px;
-    }
-
-    .logo {
-        margin-bottom: 15px;
-    }
-
-    .user {
-        margin-top: 15px;
-    }
-
-    /* Estilos para los enlaces en el nav */
-    nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    /* Estilos para las secciones principales */
-    .main {
-        padding: 20px;
-    }
-
-    .floor_good_hd h3 {
-        font-size: 24px;
-    }
-
-    .goods li {
-        width: calc(50% - 10px);
-    }
-
-    /* Estilos para el footer */
-    footer {
-        padding: 15px;
-    }
-}
-
-/* Estilos para dispositivos con una anchura de pantalla entre 769px y 1024px (por ejemplo, tabletas y algunas computadoras de escritorio) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos para el header */
-    .hea-nav {
-        padding: 20px;
-    }
-
-    .texto1 {
-        font-size: 20px;
-    }
-
-    .logo {
-        margin-bottom: 20px;
-    }
-
-    .user {
-        margin-top: 20px;
-    }
-
-    /* Estilos para los enlaces en el nav */
-    nav ul li {
-        display: inline-block;
-        margin-right: 20px;
-    }
-
-    /* Estilos para las secciones principales */
-    .main {
-        padding: 30px;
-    }
-
-    .floor_good_hd h3 {
-        font-size: 28px;
-    }
-
-    .goods li {
-        width: calc(33.33% - 20px);
-    }
-
-    /* Estilos para el footer */
-    footer {
-        padding: 20px;
-    }
-}
-
-/* Estilos para dispositivos con una anchura de pantalla mayor a 1024px (por ejemplo, algunas computadoras de escritorio) */
-@media only screen and (min-width: 1025px) {
-    /* Estilos para el header */
-    .hea-nav {
-        padding: 30px;
-    }
-
-    .texto1 {
-        font-size: 24px;
-    }
-
-    .logo {
-        margin-bottom: 30px;
-    }
-
-    .user {
-        margin-top: 30px;
-    }
-
-    /* Estilos para los enlaces en el nav */
-    nav ul li {
-        display: inline-block;
-        margin-right: 30px;
-    }
-
-    /* Estilos para las secciones principales */
-    .main {
-        padding: 40px;
-    }
-
-    .floor_good_hd h3 {
-        font-size: 32px;
-    }
-
-    .goods li {
-        width: calc(25% - 30px);
-    }
-
-    /* Estilos para el footer */
-    footer {
-        padding: 30px;
+    .subnav a {
+        margin-left: 10px; /* Menos margen */
     }
 }

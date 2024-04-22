@@ -15,8 +15,8 @@ body::before {
     width: 100%;
     height: 100%;
     background-image: url(../img/fondo2.webp);
-    opacity: 0.1; /* Ajusta este valor para cambiar la transparencia de la imagen de fondo */
-    z-index: -1; /* Asegura que la capa esté detrás de todo el contenido */
+    opacity: 0.1;
+    z-index: -1; 
 }
 
 *{
@@ -25,6 +25,13 @@ body::before {
     box-sizing: border-box;
     font-family: 'icomoon';
 }
+
+.container {
+    width: 95%; /* Ocupa el 95% del ancho del viewport, dando un poco de margen a los lados */
+    max-width: 1200px; /* No crece más de 1200px para evitar que en pantallas grandes el contenido se estire demasiado */
+    margin: auto; /* Centra el contenedor horizontalmente en la página */
+}
+
 
 /* Header y nav juntos para img */
 
@@ -44,6 +51,7 @@ body::before {
 }
 
 .texto1{
+    height: 50px;
     font-size: 20px;
     color: #000000;
     -webkit-text-stroke: 1.5px #704d66; /* Contorno */
@@ -72,7 +80,7 @@ nav{
 
 .logo{
     margin-left: 10px;
-    width: 180px;
+    width: 15%;
     box-shadow: -2px 5px 2px 1px #000000;
     border-radius: 50px 0 43px 10px;
     transition: all .5s;
@@ -113,6 +121,7 @@ nav{
     font-size: 16px;
     border-radius: 8px;
     padding-left: 35px;
+    padding-right: 10px;
     background-color: #f3f9fb;
 }
 
