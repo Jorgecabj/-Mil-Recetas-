@@ -1,5 +1,9 @@
-/* CSS que aplica al Section (Main (lista de recetas)) */
-/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
+/* main */
+/* floor_vegetarianos & tendencias & Postres */
+
+section {
+    margin-top: 50px;
+}
 
 
 .floor {
@@ -82,7 +86,7 @@
 }
 
 .goods li:hover{
-    transform: translateY(-20px);
+    transform: translateY(-30px);
 }
 
 .goods li .picture {
@@ -111,10 +115,12 @@
     color: #000000;
     padding: 0 12px;
     background-color: #66b4b8;
+    text-decoration: none; 
 }
 
 .good_title{
-    font-size: large; 
+    font-size: large;
+    text-decoration: none; 
 }
 
 .good_title,

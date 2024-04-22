@@ -3,7 +3,7 @@
 
 body {
     position: relative;
-    overflow-x: hidden; 
+    overflow-x: hidden; /* Evitar desbordamiento horizontal */
     overflow-y: auto;
 }
 
@@ -27,10 +27,7 @@ body::before {
 }
 
 .container {
-    width: 100%; 
-    padding-left: 10px; /* Añadir un pequeño relleno a la izquierda para evitar el desbordamiento */
-    padding-right: 10px; /* Añadir un pequeño relleno a la derecha para evitar el desbordamiento */
-    padding-bottom: 10px; 
+    width: 95%; 
     max-width: 1200px; 
     margin: auto; 
 }
