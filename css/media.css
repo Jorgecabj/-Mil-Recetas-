@@ -16,7 +16,8 @@
     }
 
     .user {
-        margin-top: 20px; 
+        margin-top: 20px; /* Ajusta este valor según sea necesario */
+        margin-right: 10px; 
     }
 
     .subnav a {
