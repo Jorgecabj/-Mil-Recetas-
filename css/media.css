@@ -4,6 +4,10 @@
         width: 90%;
     }
 
+    .floor_good_hd span::after {
+        bottom: -3px; /* Ajuste de la posición vertical */
+    }
+
     .logo {
         width: 30%;
     }

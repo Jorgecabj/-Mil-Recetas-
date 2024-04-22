@@ -3,7 +3,7 @@
 
 body {
     position: relative;
-    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+    overflow-x: hidden; 
     overflow-y: auto;
 }
 
