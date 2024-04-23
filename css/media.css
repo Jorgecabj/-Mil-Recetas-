@@ -30,6 +30,14 @@
         align-items: center; 
     }
 
+    .subnav .w li {
+        margin-right: 15px; /* Reducir el espacio entre elementos */
+    }
+
+    .subnav a {
+        padding: 10px 15px; /* Reducir el relleno de los enlaces */
+    }   
+
     .search-wrap {
         width: 100%; 
         margin: 10px 0;
