@@ -31,7 +31,8 @@
     }
 
     .subnav .w li {
-        margin-right: 15px; /* Reducir el espacio entre elementos */
+        margin-right: 5px; /* Reducir el espacio entre elementos */
+        margin-left: -15px;
     }
 
     .subnav a {
