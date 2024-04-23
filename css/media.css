@@ -26,11 +26,27 @@
     }
 
     .nav-top {
+        margin-left: 3%;
         flex-direction: column; 
         align-items: center; 
     }
 
+    .logo {
+        position: relative;
+        left: -10px; /* Desplaza el logo a la izquierda */
+    }
+
+    .logo img {
+        width: 80px; /* ajusta el tamaño según tus preferencias */
+        height: auto; /* para mantener la proporción */
+    }  
+
+    .search{
+        margin-left: 3%;
+    }
+
     .search-wrap {
+        
         width: 100%; 
         margin: 10px 0;
     }
