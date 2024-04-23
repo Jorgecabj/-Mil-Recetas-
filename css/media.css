@@ -41,13 +41,9 @@
         align-items: center; 
     }
 
-    .user a {
-        margin-left: auto;
-    }
-
-    .user a img {
-        display: none; 
-    }
+    .user a:before {
+        display: none;
+      }
 }
 
 /* Estilos para tabletas */
