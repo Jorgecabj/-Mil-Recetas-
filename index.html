@@ -294,13 +294,14 @@
 
 
     <script>
-        // Función para cambiar el placeholder según el tamaño de la pantalla
+
+        // Función para cambiar el placeholder del buscador según el tamaño de la pantalla
         function updatePlaceholder() {
           var input = document.getElementById('user-input');
-          if (window.innerWidth <= 768) {
-            input.placeholder = "Buscar recetas...";  // Nuevo texto para pantallas pequeñas
+          if (window.innerWidth <= 500) {
+            input.placeholder = "Buscar recetas...";  
           } else {
-            input.placeholder = "Busca la receta que necesitas...";  // Texto original para pantallas grandes
+            input.placeholder = "Busca la receta que necesitas...";  
           }
         }
         window.onload = updatePlaceholder;

@@ -12,6 +12,11 @@
         font-size: 16px; 
         text-align: center; 
     }
+    
+    .logo {
+        width: 30%; /* Ajusta el ancho del logo según sea necesario */
+        margin-left: 0; /* Elimina el margen izquierdo para centrar el logo */
+    }
 
     .floor_good_hd h3::before {
         bottom: -3px; 
