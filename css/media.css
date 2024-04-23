@@ -1,32 +1,52 @@
-/* Estilos para dispositivos móviles */
+/* CSS que aplica a toda la pagina para distintos dispositivos */
+/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
+
+
+
 @media only screen and (max-width: 768px) {
     .container {
         width: 90%;
     }
 
+    .texto1 {
+        font-size: 16px; 
+        text-align: center; 
+    }
+
     .floor_good_hd h3::before {
-        bottom: -3px; /* Ajuste de la posición vertical */
+        bottom: -3px; 
     }
 
     .floor_good_hd span::after {
-        bottom: -3px; /* Ajuste de la posición vertical */
+        bottom: -3px; 
     }
 
     .floor_good_hd h3 {
-        font-size: 20px; /* Reducir el tamaño del texto para pantallas más pequeñas */
+        font-size: 20px; 
     }
 
-    .logo {
-        width: 30%;
+    .nav-top {
+        flex-direction: column; 
+        align-items: center; 
     }
 
-    .search {
-        width: 250px;
+    .search-wrap {
+        width: 100%; 
+        margin: 10px 0;
     }
 
-    .subnav a {
-        padding: 10px 15px;
-        margin-left: 15px;
+    .user {
+        margin-top: 10px; 
+        display: flex; 
+        align-items: center; 
+    }
+
+    .user a {
+        margin-left: auto;
+    }
+
+    .user a img {
+        display: none; 
     }
 }
 
