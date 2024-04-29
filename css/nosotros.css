@@ -1,0 +1,96 @@
+/* CSS que aplica al Section de Nosotros */
+/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
+
+section {
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.barra {
+    display: flex;
+    justify-content: center; 
+}
+
+.img_barra {
+    text-align: center;
+    margin: 0 10px; 
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+.img_barra:hover {
+    transform: scale(1.1); 
+}
+
+.nosotros_logo,
+.lugar_logo {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+    margin: auto; 
+}
+
+.title {
+    font-family: 'icomoon'; 
+    font-weight: bold; 
+    text-decoration: none; 
+    font-size: 20px;
+    color: black; 
+}
+
+.linea_negra {
+    border: 1px solid black; 
+    margin-top: 20px; 
+}
+
+.title_nos {
+    font-size: 50px;
+    color: #166080;
+    -webkit-text-stroke: 0.5px #ffa7e4;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.title_ubi {
+    font-size: 50px;
+    color: #ffa7e4;
+    -webkit-text-stroke: 1px #166080;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.text_nos{
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.maps_ubi{
+    width: 950px;
+    height: 550px;
+}
+
+/* Arreglo de media para la ubicación */
+
+@media only screen and (max-width: 768px) {
+
+    .maps_ubi{
+        width: 450px;
+        height: 250px;
+    }
+
+    .logo_nos{
+        width: 450px;
+        height: 250px;
+    }
+
+}
