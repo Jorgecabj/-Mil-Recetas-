@@ -84,13 +84,13 @@ section {
 @media only screen and (max-width: 768px) {
 
     .maps_ubi{
-        width: 450px;
-        height: 250px;
+        width: 400px;
+        height: 200px;
     }
 
     .logo_nos{
-        width: 450px;
-        height: 250px;
+        width: 400px;
+        height: 200px;
     }
 
 }
