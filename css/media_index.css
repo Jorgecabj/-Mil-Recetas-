@@ -9,13 +9,13 @@
     }
 
     .texto1 {
-        font-size: 16px; 
+        font-size: 20px; 
         text-align: center; 
     }
     
     .logo {
-        width: 30%; /* Ajusta el ancho del logo según sea necesario */
-        margin-left: 0; /* Elimina el margen izquierdo para centrar el logo */
+        width: 30%;
+        margin-left: 0;
     }
 
     .floor_good_hd h3::before {
@@ -36,12 +36,12 @@
     }
 
     .subnav .w li {
-        margin-right: 3px; /* Reducir el espacio entre elementos */
+        margin-right: 3px; 
         margin-left: -20px;
     }
 
     .subnav a {
-        padding: 10px 15px; /* Reducir el relleno de los enlaces */
+        padding: 10px 15px; 
     }   
 
     .search-wrap {
