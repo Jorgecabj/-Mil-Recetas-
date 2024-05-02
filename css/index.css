@@ -23,7 +23,7 @@ body::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'icomoon';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -229,7 +229,7 @@ nav{
 /* Footer */
 
 footer {
-    font-family: 'icomoon';
+    font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
     background-color: #166080;
     color: #ffa7e4;
