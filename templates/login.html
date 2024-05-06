@@ -6,10 +6,16 @@
     <title>¡Mil Recetas!</title>
 
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/media_index.css">
+    <link rel="stylesheet" href="../css/login.css">
 
 </head>
 
@@ -30,23 +36,17 @@
                     <div class="search-wrap w">
                         <div class="logo">
                             <h1>Mil Recetas</h1>
-                            <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+                            <a href="../index.html"><img src="../img/logo2.png" alt=""></a>
                         </div>
-                        <div class="search">
-                            <input type="text" placeholder="Busca la receta que necesitas..." id="user-input">
-                        </div>
-                        <div class="user">
-                            <a id="user_icon" href="../templates/login.html">Ingresar / Registrarme</a>
+                        <div class="login">
+                            <a href="./register.html"> Crear una cuenta</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="subnav">
-                    <ul class="w">
-                        <li><a href="../index.html#floor_vegetariano"><b>Vegetariano</b></a></li>
-                        <li><a href="../index.html#floor_tendencias"><b>Tendencias</b></a></li>                    
-                        <li><a href="../index.html#floor_postres"><b>Postres</b></a></li>
-                    </ul>
                 </div>
+
             </nav>
         </div>
         <!-- nav end -->
@@ -54,8 +54,31 @@
         <!-- main start -->
         <section>
             <div class="container">
-            
-                      
+                <div class="login_hd">
+                    <h3>Iniciar Sesión</h3>
+                </div>
+
+                <div class="login_bd">
+                    <form>
+                        <div class="email">
+                            <label for="email">Correo electrónico</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="password">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password">
+                            <span class="eye"><img src="../img/close.png" id="eye"></span>
+                        </div>
+                        <div class="login-row">
+                            <button class="login_btn" id="login_btn">Iniciar sesión</button>
+                        </div>
+                        <div id="error-message" class="error-message"></div> 
+                    </form>
+                </div>
+
+                <div class="goto">
+                    <a href="./register.html">¿Todavía no tienes una cuenta? <i>Ir a crear una cuenta</i></a>
+                </div>
             </div>
         </section>
         <!-- main end -->
@@ -66,8 +89,8 @@
             <div class="footer-section">
                 <h2>Contacto</h2>
                 <ul>
-                    <li><img src="./img/Whatsapp.png" alt="WhatsApp icon" class="icon"> <a href="#">WhatsApp</a></li>
-                    <li><img src="./img/redes_sociales.png" alt="Redes Sociales icon" class="icon"> <a href="#">Redes Sociales</a></li>
+                    <li><img src="../img/Whatsapp.png" alt="WhatsApp icon" class="icon"> <a href="#">WhatsApp</a></li>
+                    <li><img src="../img/redes_sociales.png" alt="Redes Sociales icon" class="icon"> <a href="#">Redes Sociales</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -81,7 +104,7 @@
             <div class="footer-section">
                 <h2>Atención al Cliente</h2>
                 <ul>
-                    <li><a href="./templates/nosotros.html">Nosotros</a></li>
+                    <li><a href="../templates/nosotros.html">Nosotros</a></li>
                     <li><a href="#">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
@@ -92,6 +115,7 @@
     </footer>            
     <!-- footer end -->
 
+    <script src="../js/password.js"></script>
 
     <script>
 
@@ -107,6 +131,6 @@
         window.onload = updatePlaceholder;
         window.onresize = updatePlaceholder;
       </script>
-            
+           
 </body>
 </html>
