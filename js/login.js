@@ -1,12 +1,16 @@
+/* JS que aplica al login para verificar email y contraseña */
+/* Derechos reservados al Grupo 4 : Matias Abel Cortés, Héctor Salvador Guzmán, Bárbara Marisol Garro, Ceballos Jorge */
+
+
 document.getElementById("eye").addEventListener("click", function() {
     var passwordInput = document.getElementById("password");
 
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        this.src = "../img/open.png"; // Cambiar la imagen a 'open.png' cuando la contraseña es visible
+        this.src = "../img/open.png"; // pone la imagen open para ver la contraseña
     } else {
         passwordInput.type = "password";
-        this.src = "../img/close.png"; // Cambiar la imagen a 'close.png' cuando la contraseña está oculta
+        this.src = "../img/close.png"; // pone la imagen close para censurar la contraseña
     }
 });
 
@@ -16,19 +20,30 @@ document.addEventListener('DOMContentLoaded', function() {
     var errorMessage = document.getElementById('error-message');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita que se envíe el formulario por defecto
+        event.preventDefault();
 
-        // Obtener los valores de correo electrónico y contraseña
+        // para obtener el EMAIL y Contraseña
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
 
 
-        // Ejemplo de verificación simple
-        if (email !== 'usuario@example.com' || password !== 'contraseña') {
-            errorMessage.innerText = 'Correo electrónico o contraseña incorrectos';
-            errorMessage.style.display = 'block'; // Mostrar el mensaje de error
-        } else {
-            window.location.href = '../index.html';
-        }
+        // Verifica el email y contraseña
+        if(email =='' || password == '')
+            {
+                errorMessage.innerText = 'Campos de email o contraseña vacio';
+                errorMessage.style.display = 'block'; // Muestra el mensaje de error
+            }
+            else
+            {
+                if (email !== 'usuario@example.com' || password !== 'contraseña') 
+                {
+                    errorMessage.innerText = 'Correo electrónico o contraseña incorrectos';
+                    errorMessage.style.display = 'block'; // Muestra el mensaje de error
+                } 
+                else 
+                {
+                window.location.href = '../index.html'; // Email y contraseña correcta, te manda al inicio de la page
+                }
+            }
     });
 });
